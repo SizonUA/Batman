@@ -1,8 +1,12 @@
-/* 37:00 */
+/*
+  font-family: 'Playfair Display', serif;
+  border: 1px solid red;
+
+ */
 
 body {
-  background: #0A090A;
-  font-family: 'Roboto', sans-serif;
+  background: #0a090a;
+  font-family: "Roboto", sans-serif;
   color: #ffffff;
   background-image: url("../image/main-bg.png");
   background-repeat: no-repeat;
@@ -13,7 +17,6 @@ body {
   /* border: 1px solid red; */
   max-width: 1140px;
   margin: auto;
-
 }
 
 /* Begin HEADER */
@@ -22,20 +25,19 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-top: 45px;
+  margin-bottom: 30%;
 }
 
 .logo {
-  font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 28px;
 }
 
-
 .search {
   display: flex;
   align-items: center;
-  flex: 0.8;;
+  flex: 0.8;
 }
 
 .search-input {
@@ -45,16 +47,15 @@ body {
   border-radius: 5px;
   padding: 12px 18px;
   border: none;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #AEAEAE;
+  color: #aeaeae;
   flex: 1;
 }
 
 ::-webkit-input-placeholder {
-  color: #AEAEAE;
+  color: #aeaeae;
 }
 
 .search-button {
@@ -75,3 +76,193 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+
+/* END HEADER */
+
+/* Begin MAIN */
+
+.title {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 7px;
+}
+
+.title-en {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #787878;
+  margin-bottom: 38px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+
+.country {
+  display: flex;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 33px;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.play:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../image/play.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 15px;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.more:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../image/play.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 15px;
+  transform: rotate(90deg);
+}
+
+/*  Begin CONTENT */
+.content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 43px 50px;
+  color: #000000;
+}
+
+/* Begin SMALL-INFO */
+.poster {
+  display: block;
+  margin-top: -75px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background: #ff8f27;
+  padding: 10px 44px;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+}
+
+.actors-title {
+  padding-left: 15px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+.actors-list {
+  list-style: none;
+  padding-left: 0px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration-line: underline;
+  margin: 0;
+}
+
+/* Begin FULL-INFO */
+.full-info {
+  flex: 0.97;
+}
+
+.full-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs-content {
+  margin-right: 70px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.tabs-item {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.tabs-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.tabs-item-active {
+  color: #ff8f27;
+  font-weight: bold;
+}
+
+.text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: justify;
+  margin-top: 0;
+}
+
+.text-title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+/* Begin SUBSCRIBE */
