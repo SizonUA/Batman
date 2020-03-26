@@ -174,14 +174,18 @@ body {
   justify-content: space-between;
   background-color: #ffffff;
   border-radius: 3px;
-  padding: 43px 50px;
+  padding: 3% 4%;
   color: #000000;
 }
 
-/* Begin SMALL-INFO */
+/* Begin SHORT-INFO */
+.short-info {
+  margin-right: 3%;
+}
+
 .poster {
   display: block;
-  margin-top: -75px;
+  margin-top: -35%;
   margin-bottom: 20px;
 }
 
@@ -230,7 +234,7 @@ body {
 .tabs {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 4%;
 }
 
 .tabs-item {
@@ -238,11 +242,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
-  margin-right: 40px;
 }
 
 .tabs-item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 5%;
 }
 
 .tabs-item-active {
@@ -295,4 +298,111 @@ body {
   border-radius: 0px 5px 5px 0px;
   border: none;
   padding: 12px;
+}
+
+/* @MEDIA */
+@media (max-width: 1200px) {
+  .conteiner {
+    max-width: 960px;
+  }
+
+  .tabs-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .conteiner {
+    max-width: 740px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tabs-item {
+    flex-basis: 20%;
+    line-height: 2;
+  }
+
+  .full-content {
+    flex-wrap: wrap;
+  }
+
+  .tabs-content {
+    margin-bottom: 5%;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .actors-list {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .conteiner {
+    max-width: 540px;
+  }
+
+  .movie-info {
+    flex-wrap: wrap;
+  }
+
+  .mare {
+    display: none;
+  }
+
+  .tabs-content {
+    margin-right: 0;
+  }
+
+  .tabs-item {
+    flex-basis: 33%;
+  }
+}
+
+@media (max-width: 578px) {
+  .conteiner {
+    max-width: 90%;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+  .search {
+    flex-basis: 100%;
+    order: 3;
+    margin-top: 5%;
+  }
+
+  .play {
+    flex-basis: 100%;
+    margin-top: 10%;
+  }
+
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .short-info {
+    /* margin-bottom: 5%; */
+  }
+
+  .poster {
+    display: inline-block;
+    width: 100%;
+    margin-top: -20%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .actors-title,
+  .actors-list {
+    display: none;
+  }
 }
