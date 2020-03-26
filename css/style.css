@@ -41,8 +41,6 @@ body {
 }
 
 .search-input {
-  width: 800px;
-  height: 40px;
   background: rgba(196, 196, 196, 0.5);
   border-radius: 5px;
   padding: 12px 18px;
@@ -231,6 +229,7 @@ body {
 
 .tabs {
   display: flex;
+  align-items: center;
   margin-bottom: 40px;
 }
 
@@ -266,3 +265,34 @@ body {
 }
 
 /* Begin SUBSCRIBE */
+
+.subscribe-title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.subscribe-input {
+  background: rgba(241, 241, 241, 0.5);
+  border-radius: 5px 0px 0px 5px;
+  padding: 12px 18px;
+  border: none;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #aeaeae;
+}
+
+.subscribe-button {
+  background: #ff8f27;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  padding: 12px;
+}
