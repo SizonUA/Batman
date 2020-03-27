@@ -228,7 +228,12 @@ body {
 }
 
 .tabs-content {
+  display: none;
   margin-right: 70px;
+}
+
+.visible {
+  display: block;
 }
 
 .tabs {
@@ -243,6 +248,10 @@ body {
   line-height: 21px;
   text-decoration: none;
 }
+
+/* .bookmark-orange {
+
+} */
 
 .tabs-item:not(:last-child) {
   margin-right: 5%;
@@ -372,6 +381,7 @@ body {
   .header {
     flex-wrap: wrap;
   }
+
   .search {
     flex-basis: 100%;
     order: 3;
