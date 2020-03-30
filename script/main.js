@@ -8,6 +8,5 @@ $(document).ready(function () {
     $(activeContent).toggleClass('visible');
     $('.tabs-item-active').toggleClass('tabs-item-active');
     $(this).toggleClass('tabs-item-active');
-
   });
 });

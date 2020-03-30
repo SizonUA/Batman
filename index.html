@@ -15,7 +15,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/animate.css" />
   </head>
 
   <body>
@@ -37,7 +37,7 @@
         </form>
         <!-- /.search -->
         <div class="user">
-          <img src="image/bookmark.svg" alt="Bookmark" class="bookmark" />
+          <img class="img-bookmark" src="image/bookmark-orange.svg" alt="Bookmark" class="bookmark" />
           <img src="image/avatar.jpg" alt="Avatar" class="avatar" />
         </div>
         <!-- /.user -->
@@ -45,13 +45,13 @@
       <!-- /.header -->
 
       <main class="main">
-        <h1 class="title animated zoomIn">
+        <h1 class="title animated fadeInRightBig">
           Бэтмен
         </h1>
-        <small class="title-en">
+        <small class="title-en animated fadeInDown delay-1s">
           The Batman
         </small>
-        <div class="info">
+        <div class="info animated fadeInUp delay-3s">
           <div class="movie-info">
             <span class="tag">Фильм</span>
             <span class="country">США, 2021 год</span>
@@ -73,17 +73,30 @@
             <h3 class="actors-title">
               В главных ролях:
               <ul class="actors-list">
-                <li class="actors-list-item">Роберт Паттинсон</li>
-                <li class="actors-list-item">Зои Кравиц</li>
-                <li class="actors-list-item">Колин Фаррелл</li>
-                <li class="actors-list-item">Питер Сарсгаард</li>
-                <li class="actors-list-item">Пол Дано</li>
-                <li class="actors-list-item">Энди Серкис</li>
-                <li class="actors-list-item">Джеффри Райт</li>
-                <li class="actors-list-item">Джон Туртурро</li>
-                <li class="actors-list-item">Макс Карвер</li>
-                <li class="actors-list-item">Кон О’Нилл</li>
+                <li class="actors-list-item">
+                  <a class="actors-list-item--decoration" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%82%D1%82%D0%B8%D0%BD%D1%81%D0%BE%D0%BD,_%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82" target="_blank" rel="noopener noreferrer">Роберт Паттинсон</a>
+                  </li>
+                <li class="actors-list-item">
+                  <a class="actors-list-item--decoration" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D0%B2%D0%B8%D1%86,_%D0%97%D0%BE%D0%B8" target="_blank">Зои Кравиц</a>
+                 </li>
+                <li class="actors-list-item">
+                  <a class="actors-list-item--decoration" href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D1%80%D1%80%D0%B5%D0%BB%D0%BB,_%D0%9A%D0%BE%D0%BB%D0%B8%D0%BD" target="_blank">Колин Фаррелл</a></li>
+                <li class="actors-list-item">
+                  <a class="actors-list-item--decoration" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D1%80%D1%81%D0%B3%D0%B0%D0%B0%D1%80%D0%B4,_%D0%9F%D0%B8%D1%82%D0%B5%D1%80" target="_blank">Питер Сарсгаард</a></li>
+                <li class="actors-list-item">
+                  <a class="actors-list-item--decoration" href="https://ru.wikipedia.org/wiki/%D0%94%D0%B0%D0%BD%D0%BE,_%D0%9F%D0%BE%D0%BB" target="_blank">Пол Дано</a></li>
+                <li class="actors-list-item">
+                  <a class="actors-list-item--decoration" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%80%D0%BA%D0%B8%D1%81,_%D0%AD%D0%BD%D0%B4%D0%B8" target="_blank">Энди Серкис</a></li>
+                <li class="actors-list-item">
+                  <a class="actors-list-item--decoration" href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B9%D1%82,_%D0%94%D0%B6%D0%B5%D1%84%D1%84%D1%80%D0%B8" target="_blank">Джеффри Райт</a></li>
+                <li class="actors-list-item">
+                  <a class="actors-list-item--decoration" href="https://ru.wikipedia.org/wiki/%D0%A2%D1%83%D1%80%D1%82%D1%83%D1%80%D1%80%D0%BE,_%D0%94%D0%B6%D0%BE%D0%BD" target="_blank">Джон Туртурро</a></li>
+                <li class="actors-list-item">
+                  <a class="actors-list-item--decoration" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B2%D0%B5%D1%80,_%D0%9C%D0%B0%D0%BA%D1%81" target="_blank">Макс Карвер</a></li>
+                <li class="actors-list-item">
+                  <a class="actors-list-item--decoration" href="https://en.wikipedia.org/wiki/Con_O%27Neill_(actor)" target="_blank">Кон О’Нилл</a></li>
               </ul>
+
             </h3>
           </div>
           <!-- /.short-info -->
@@ -91,44 +104,84 @@
           <div class="full-info">
             <nav class="tabs">
               <a href="#about" class="tabs-item tabs-item-active">Описание</a>
-              <a href="#reviews" class="tabs-item">Рецензии</a>
-              <a href="#premieres" class="tabs-item">Премьеры</a>
+              <a href="#history" class="tabs-item">История</a>
               <a href="#actors" class="tabs-item">Актеры</a>
+              <a href="#casting" class="tabs-item">Кастинг</a>
               <a href="#role" class="tabs-item">Роли</a>
               <a href="#facts" class="tabs-item">Факты</a>
               <a href="#sites" class="tabs-item">Сайты</a>
-              <a href="#" class="tabs-item bookmark-orange">
+              <!-- <a href="#" class="tabs-item bookmark-orange">
                 <img
                   src="./image/bookmark-orange.svg"
-                  alt=""
+                  alt="Favorite icon"
                   class="bookmark-added"
                 />
-              </a>
+              </a> -->
             </nav>
             <div class="full-content">
               <div class="tabs-content visible" id="about">
                 <p class="text">
-                  Предстоящий американский супергеройский фильм, основанный на
-                  одноимённых комиксах издательства DC Comics. Картина будет
-                  выпущена компанией Warner Bros. и будет перезагрузкой всех
-                  фильмов о Бэтмене.
+                  Готэм - крупный мегаполис. На его улочках хорошо себя чувствуют представители криминального мира. Здесь делят территорию несколько мафиозных группировок и полно злодеев-одиночек. Брюс Уейн в детстве потерял обоих родителей по вине грабителя. На глазах мальчика произошло трагическое событие, которое оставило след на неокрепшей психике. Рядом с телами родных людей он поклялся, что будет бороться с преступниками.
+                </p>
+                <p class="text">
+                  С тех пор прошло несколько лет. Мальчик возмужал и приступил к выполнению своего плана. Он не обладает сверхъестественными способностями, но ум и рассудительность всегда при нем. Брюс - миллиардер, который может осуществить все свои пожелания. Он создает секретную штаб-квартиру в скале, откуда и начинается его путь супергероя.
+                </p>
+                <p class="text">
+                  Каждую ночь, надев специальный костюм, оснащенный огромным количеством новаторских разработок, темный рыцарь следит за городом. Он стоит на страже порядка, искореняя преступность. Его лицо скрыто маской, а все зовут его Бэтмен, и не знают реального имени. Герою впервые предстоит встретиться с умным и хитрым противником. Он совершает преступления чужими руками и мастерски запутывает следы. Сможет ли Уейн выследить коварного бандита?
                 </p>
               </div>
 
-              <div class="tabs-content" id="reviews">
-                reviews
+              <div class="tabs-content" id="history">
+                <b>«Бэтмен»</b> <i>(англ. The Batman)</i> — предстоящий
+                американский супергеройский фильм, основанный на одноимённых
+                комиксах издательства DC Comics. Картина будет выпущена
+                компанией Warner Bros. и будет перезагрузкой всех фильмов о
+                Бэтмене.
+                </p>
+                <p class="text">
+                Фильм является десятым по счёту фильмом из Расширенной
+                вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт
+                Ривз, а главную роль исполнит Роберт Паттинсон.
+                </p>
               </div>
 
-              <div class="tabs-content" id="premieres">
-              <!--
-
-              <h4 class="text-title">
-                Разработка
-              </h4>
-
-             -->              </div>
+              <div class="tabs-content" id="casting">
+                <p class="text">
+                  В январе 2019 года было объявлено, что <strong>Бен Аффлек</strong> не вернётся
+                  к роли <i>Бэтмена</i>. В мае того же года стало известно, что
+                  роль <i>Бэтмена</i> исполнит <strong>Роберт Паттинсон</strong>.
+                  <br>
+                  В сентябре
+                  стало известно, что <strong>Джеффри Райт</strong> рассматривается на роль
+                  <i>Джеймса Гордона</i>.
+                  <br>
+                  В октябре к фильму, с ролью
+                  <i>Женщины-кошки</i>, присоединилась <strong>Зои Кравиц</strong>, а также <strong>Пол Дано</strong>
+                  с ролью <i>Загадочника</i>.
+                  <br>
+                  В том же месяце <strong>Джеффри Райт</strong>
+                  официально присоединился к фильму в роли <i>Джеймса Гордона</i>.
+                  <br>
+                  В ноябре стало известно, что <strong>Колин Фаррелл</strong> и <strong>Энди Серкис</strong> ведут
+                  переговоры насчёт участия в фильме с ролями <i>Пингвина</i> и
+                  <i>Альфреда Пенниуорта</i> соответственно, тогда как <strong>Джереми
+                  Стронг</strong>отказался от роли <i>Двуликого</i>.
+                </p>
+              </div>
 
               <div class="tabs-content" id="actors">
+                <p class="text">
+                  ---
+                </p>
+              </div>
+
+              <div class="tabs-content" id="role">
+                <p class="text">
+                  ---
+                </p>
+              </div>
+
+              <div class="tabs-content" id="facts">
                 <p class="text">
                   В октябре 2014 года студия Warner Bros. объявила, что в
                   разработке находится сольный фильм о Бэтмене, роль которого
@@ -144,17 +197,6 @@
                   мае 2016 года Джереми Айронс подтвердил, что он появится в
                   фильме про Тёмного Рыцаря.
                 </p>
-              </div>
-
-              <div class="tabs-content" id="role">
-                <p class="text">
-                  Фильм является десятым по счёту фильмом из Расширенной
-                  вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт
-                  Ривз, а главную роль исполнит Роберт Паттинсон.
-                </p>
-              </div>
-
-              <div class="tabs-content" id="facts">
                 <p class="text">
                   На Comic-Con в Сан-Диего в июле 2016 года было официально
                   подтверждено, что Аффлек станет режиссёром картины. В августе
@@ -169,7 +211,6 @@
               <div class="tabs-content" id="sites">
                 Сайты
               </div>
-
 
               <div class="subscribe">
                 <h3 class="subscribe-title">Подпишитесь на обновления</h3>
