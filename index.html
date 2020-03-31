@@ -10,7 +10,7 @@
     />
     <title>Batman 2021</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400,900&display=swap&subset=cyrillic"
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400,700,900&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -37,7 +37,7 @@
         </form>
         <!-- /.search -->
         <div class="user">
-          <img class="img-bookmark" src="image/bookmark-orange.svg" alt="Bookmark" class="bookmark" />
+          <img class="bookmark" src="image/bookmark.svg" alt="Bookmark" id="bookmark"/>
           <img src="image/avatar.jpg" alt="Avatar" class="avatar" />
         </div>
         <!-- /.user -->
@@ -72,6 +72,7 @@
             <button class="button">Буду смотреть</button>
             <h3 class="actors-title">
               В главных ролях:
+            </h3>
               <ul class="actors-list">
                 <li class="actors-list-item">
                   <a class="actors-list-item--decoration" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%82%D1%82%D0%B8%D0%BD%D1%81%D0%BE%D0%BD,_%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82" target="_blank" rel="noopener noreferrer">Роберт Паттинсон</a>
@@ -96,8 +97,6 @@
                 <li class="actors-list-item">
                   <a class="actors-list-item--decoration" href="https://en.wikipedia.org/wiki/Con_O%27Neill_(actor)" target="_blank">Кон О’Нилл</a></li>
               </ul>
-
-            </h3>
           </div>
           <!-- /.short-info -->
 
@@ -105,11 +104,11 @@
             <nav class="tabs">
               <a href="#about" class="tabs-item tabs-item-active">Описание</a>
               <a href="#history" class="tabs-item">История</a>
-              <a href="#actors" class="tabs-item">Актеры</a>
               <a href="#casting" class="tabs-item">Кастинг</a>
+              <a href="#actors" class="tabs-item">Актеры</a>
               <a href="#role" class="tabs-item">Роли</a>
               <a href="#facts" class="tabs-item">Факты</a>
-              <a href="#sites" class="tabs-item">Сайты</a>
+              <!-- <a href="#sites" class="tabs-item">Сайты</a> -->
               <!-- <a href="#" class="tabs-item bookmark-orange">
                 <img
                   src="./image/bookmark-orange.svg"
@@ -130,6 +129,7 @@
                   Каждую ночь, надев специальный костюм, оснащенный огромным количеством новаторских разработок, темный рыцарь следит за городом. Он стоит на страже порядка, искореняя преступность. Его лицо скрыто маской, а все зовут его Бэтмен, и не знают реального имени. Герою впервые предстоит встретиться с умным и хитрым противником. Он совершает преступления чужими руками и мастерски запутывает следы. Сможет ли Уейн выследить коварного бандита?
                 </p>
               </div>
+              <!-- /.tabs-content   /#about -->
 
               <div class="tabs-content" id="history">
                 <b>«Бэтмен»</b> <i>(англ. The Batman)</i> — предстоящий
@@ -144,6 +144,7 @@
                 Ривз, а главную роль исполнит Роберт Паттинсон.
                 </p>
               </div>
+              <!-- /.tabs-content   /#history -->
 
               <div class="tabs-content" id="casting">
                 <p class="text">
@@ -168,18 +169,83 @@
                   Стронг</strong>отказался от роли <i>Двуликого</i>.
                 </p>
               </div>
+              <!-- /.tabs-content   /#casting -->
 
               <div class="tabs-content" id="actors">
-                <p class="text">
-                  ---
-                </p>
-              </div>
+                <div class="actors-list--full-info">
+                  <div class="actors-list-item--full-info">
+                    <img class="actors-img" src="image/actors/batman.jpg" alt="Batman">
+                    <a class="actors-list-item--full-decoration" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%82%D1%82%D0%B8%D0%BD%D1%81%D0%BE%D0%BD,_%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82" target="_blank" rel="noopener noreferrer">
+                      <strong>Роберт Паттинсон</strong><br>
+                      (Batman)</a>
+                  </div>
 
-              <div class="tabs-content" id="role">
-                <p class="text">
-                  ---
-                </p>
+                  <div class="actors-list-item--full-info">
+                    <img class="actors-img" src="image/actors/catwoman.jpg" alt="Catwoman">
+                    <a class="actors-list-item--full-decoration" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D0%B2%D0%B8%D1%86,_%D0%97%D0%BE%D0%B8" target="_blank">
+                      <strong>Зои Кравиц</strong><br>
+                      (Catwoman)</a>
+                  </div>
+
+                  <div class="actors-list-item--full-info">
+                    <img class="actors-img" src="image/actors/penguin.jpg" alt="The Penguin">
+                    <a class="actors-list-item--full-decoration" href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D1%80%D1%80%D0%B5%D0%BB%D0%BB,_%D0%9A%D0%BE%D0%BB%D0%B8%D0%BD" target="_blank">
+                      <strong>Колин Фаррелл</strong><br>
+                    ()</a>
+                  </div>
+
+                  <div class="actors-list-item--full-info">
+                    <img class="actors-img" src="image/actors/gil_colson.jpg" alt="District Attorney Gil Colson">
+                    <a class="actors-list-item--full-decoration" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D1%80%D1%81%D0%B3%D0%B0%D0%B0%D1%80%D0%B4,_%D0%9F%D0%B8%D1%82%D0%B5%D1%80" target="_blank">
+                      <strong>Питер Сарсгаард</strong><br>
+                    ()</a>
+                  </div>
+
+                  <div class="actors-list-item--full-info">
+                    <img class="actors-img" src="image/actors/riddler.jpg" alt="The Riddler
+                    ">
+                    <a class="actors-list-item--full-decoration" href="https://ru.wikipedia.org/wiki/%D0%94%D0%B0%D0%BD%D0%BE,_%D0%9F%D0%BE%D0%BB" target="_blank">
+                      <strong>Пол Дано</strong><br>
+                    ()</a>
+                  </div>
+
+                  <div class="actors-list-item--full-info">
+                    <img class="actors-img" src="image/actors/alfred_pennyworth.jpg" alt="Alfred Pennyworth">
+                    <a class="actors-list-item--full-decoration" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%80%D0%BA%D0%B8%D1%81,_%D0%AD%D0%BD%D0%B4%D0%B8" target="_blank">
+                      <strong>Энди Серкис</strong><br>
+                    ()</a>
+                  </div>
+
+                  <div class="actors-list-item--full-info">
+                    <img class="actors-img" src="image/actors/james_gordon.jpg" alt="James Gordon">
+                    <a class="actors-list-item--full-decoration" href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B9%D1%82,_%D0%94%D0%B6%D0%B5%D1%84%D1%84%D1%80%D0%B8" target="_blank">
+                      <strong>Джеффри Райт</strong><br>
+                    ()</a>
+                  </div>
+
+                  <div class="actors-list-item--full-info">
+                    <img class="actors-img" src="image/actors/carmine_falcone.jpg" alt="Carmine Falcone">
+                    <a class="actors-list-item--full-decoration" href="https://ru.wikipedia.org/wiki/%D0%A2%D1%83%D1%80%D1%82%D1%83%D1%80%D1%80%D0%BE,_%D0%94%D0%B6%D0%BE%D0%BD" target="_blank">
+                      <strong>Джон Туртурро</strong><br>
+                    ()</a>
+                  </div>
+
+                  <div class="actors-list-item--full-info">
+                    <img class="actors-img" src="image/actors/carmine_falcone.jpg" alt="?">
+                    <a class="actors-list-item--full-decoration" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B2%D0%B5%D1%80,_%D0%9C%D0%B0%D0%BA%D1%81" target="_blank">
+                      <strong>Макс Карвер</strong><br>
+                    ()</a>
+                  </div>
+
+                  <div class="actors-list-item--full-info">
+                    <img class="actors-img" src="image/actors/batman.jpg" alt="?">
+                    <a class="actors-list-item--full-decoration" href="https://en.wikipedia.org/wiki/Con_O%27Neill_(actor)" target="_blank">
+                      <strong>Кон О’Нилл</strong><br>
+                    ()</a>
+                  </div>
+                </div>
               </div>
+              <!-- /.tabs-content   /#actors -->
 
               <div class="tabs-content" id="facts">
                 <p class="text">
@@ -207,10 +273,12 @@
                   возможно, станет главным злодеем фильма.
                 </p>
               </div>
+              <!-- /.tabs-content   /#facts -->
 
               <div class="tabs-content" id="sites">
                 Сайты
               </div>
+              <!-- /.tabs-content   /#sites -->
 
               <div class="subscribe">
                 <h3 class="subscribe-title">Подпишитесь на обновления</h3>

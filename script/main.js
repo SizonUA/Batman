@@ -10,3 +10,10 @@ $(document).ready(function () {
     $(this).toggleClass('tabs-item-active');
   });
 });
+
+$("#bookmark").on("click", function () {
+  let src = ($(this).attr("src") === "image/bookmark.svg") ?
+    "image/bookmark-orange.svg" :
+    "image/bookmark.svg";
+  $(this).attr("src", src);
+});
