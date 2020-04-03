@@ -150,6 +150,11 @@ body {
   margin-right: 15px;
 }
 
+.more-container {
+  display: flex;
+  cursor: pointer;
+  border: 1px solid red;
+}
 .more {
   display: flex;
   align-items: center;
@@ -159,11 +164,10 @@ body {
   text-decoration: none;
 }
 
-.more:after {
-  content: "";
+.more-button {
   width: 30px;
   height: 30px;
-  background-image: url("../image/play.svg");
+  /* background-image: url("../image/play.svg"); */
   background-repeat: no-repeat;
   background-size: 100%;
   margin-left: 15px;
@@ -302,13 +306,16 @@ body {
 .actors-list-item--full-info {
   display: flex;
   align-items: center;
-  text-align: center;
   width: 40%;
   margin-right: 5%;
   margin-bottom: 3%;
   text-decoration: none;
   color: #000000;
   /* border: 1px solid red; */
+}
+
+.actors-list-item-role {
+  font-size: 14px;
 }
 
 .actors-img {
